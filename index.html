@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>cv#3</title>
+   <link rel="stylesheet" href="style.css">
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 </head>
 <body>
-   
+   <div class="container-centered">
+      <div class="two-columns">
+        <div class="left-column">
+          <header>
+            <img src="./img/mainphoto.jpg" alt="Portrait" width="204" height="307">
+            <h1>Vladislav Zheleznov</h1>
+          </header>
+          <main>
+            <section class="contacts">
+              <h3>Contacts</h3>
+              <ul>
+                <li><ul>
+                  <li>
+                    <p>phone: +375-29-734-76-04</p>
+                  </li>
+                  <li>
+                    <p>email: kryt2630@gmail.com</p>
+                  </li>
+                  <li>
+                    <p>telegram: vlad_zheleznov</p>
+                  </li>
+                  <li>
+                    <p>discord: vlad__#7836</p>
+                  </li>
+                </ul></li>
+                
+              </ul>
+            </section>
+            <section class="skills">
+              <h3>Skills</h3>
+              <ol>
+                <li>programming languages:<ul>
+                  <li>JavaScript</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>HTML5, CSS3</li>
+                </ul></li>
+                <li>development tools <ul>
+                  <li>visual studio</li>
+                  <li>visual studio code</li>
+                  <li>IntelliJ IDEA</li>
+                </ul></li>
+                <li>Git & GitHub</li>
+              </ol>
+            </section>
+            <section class="languages">
+              <h3>Languages</h3>
+              <ul>
+                <li>
+                  <p class="language-name">English</p>
+                  <p>level A2-B1</p>
+                </li>
+              </ul>
+            </section>
+          </main>
+        </div>
+        <aside class="right-column">
+          <section class="about-myself">
+            <div class="sub-header">
+              <h3>About Myself</h3>
+            </div>
+            <p>I am a second year student of BSU. I study at the faculty of Applied Mathematics. My goal is to become a good specialist and I will do my best for this. I am a very goal oriented person. I chose the front-end direction, because it seems to me very interesting, to do something and immediately see the result is cool.</p>
+          </section>
+          <section class="education">
+            <div class="sub-header">
+              <h3>Education</h3>
+            </div>
+            <p>Student of BSU</p>
+          </section>
+          <section class="courses">
+            <div class="sub-header">
+              <h3>Work experience</h3>
+            </div>
+            <p>No work experience yet. Project - https://github.com/VladZheleznov/rsschool-cv/blob/gh-pages/cv.md</p>
+          </section>
+          <section class="code-example">
+            <div class="sub-header">
+              <h3>Code example</h3>
+            </div>
+            <pre>            <code>
+              function getLengthOfMissingArray(arrayOfArrays) {
+                if ((arrayOfArrays || []).length == 0) {
+                   return 0;
+                }
+                else {
+                   let rez = [];
+                   for (let i = 0; i < arrayOfArrays.length; i++) {
+                      
+                         if ((arrayOfArrays[i] || []).length == 0) {
+                            return 0;
+                         }
+                         else {
+                            rez[i] = arrayOfArrays[i].length;
+                         }
+                      }
+                   
+                   rez = rez.sort(function compare(a, b) {
+                      return a - b;
+                   });
+                   let a = 0;
+                   for (let i = 1; i < rez.length; i++) {
+                      if (rez[i] - 1 != rez[i - 1]) {
+                         a = rez[i]-1;
+                      }
+                   }
+                  if (a == 0)
+                    {
+                      return 0;
+                    }
+                  else{
+                    return a;
+                  }
+                  
+                   
+                }
+             
+          }
+  }</code>
+            </pre>
+          </section>
+        </aside>
+      </div>
+      <footer>
+        <a target="_blank" class="my-github" href="https://github.com/VladZheleznov">
+          <p>Visit my GitHub</p>
+        </a>
+      </footer>
+    </div>
 </body>
 </html>
